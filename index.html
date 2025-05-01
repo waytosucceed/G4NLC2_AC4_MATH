@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        background-color: #f0f3f5; /* Light gray */
+        color: #333; /* Dark gray */
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #bbe9ff; /* Light blue */
+        /* padding: 20px; */
+      }
+
+      .header{
+  height:5%;
+  width:100%
+}
+
+      .company-logo {
+        height: 100%;
+      }
+
+      .content-container {
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 1250px;
+        background-color: #ffffff; /* White */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px; /* Rounded corners */
+
+        img {
+          /* max-width: 100%; */
+          /* width: 45%; */
+          display: block;
+          margin: 1rem auto;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .lesson-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333; /* Dark gray */
+        margin-bottom: 1rem;
+        text-align: center;
+        text-decoration: underline; /* Underline style */
+      }
+      .button-container {
+  position: fixed; /* Fix the button to the screen */
+  top: 10%; /* Set distance from top */
+  right: 10%; /* Set distance from left */
+  z-index: 100; /* Ensure the button stays above other content */
+}
+      .button {
+        
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #4CAF50; /* Green */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.4rem;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      .probing-question {
+        margin-top: 1.5rem;
+        background-color: #f0f8ff; /* Light blue */
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .probing-question div {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #444; /* Dark gray */
+        margin-bottom: 5px;
+      }
+
+      .probing-question p {
+        color: #666; /* Medium gray */
+      }
+
+      h2,
+      h3,
+      h4 {
+        color: #333; /* Dark gray */
+        margin-top: 1.5rem;
+        font-weight: bold; /* Bold font for all headings */
+      }
+      footer {
+        width: 100%;
+      background: linear-gradient(145deg, #e6e6e6, #ffffff);
+      border-radius: 15px;
+      box-shadow: 5px 5px 15px #b3b3b3, -5px -5px 15px #ffffff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 30px;
+      color: #333;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    footer::after {
+      content: '';
+      position: relative;
+      
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      /* z-index: 1; */
+      border-radius: 15px;
+    }
+
+    footer span {
+      position: relative;
+    }
+
+      .learn-about {
+        background-color: palegreen;
+        border-radius: 1rem;
+        text-align: left;
+        margin: 1rem;
+        padding: 1rem 0;
+        li {
+          list-style-position: inside;
+          padding-left: 1rem;
+        }
+      }
+
+      p,
+      li {
+        color: #555; /* Medium gray */
+        font-size: 1.4rem;
+      }
+
+      ol,
+      ul {
+        margin-bottom: 1.5rem;
+        padding-left: 20px;
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; /* Optional */
+    }
+
+      hr {
+        border: none; /* Remove default border */
+        height: 2px; /* Set the height of the horizontal rule */
+        background-color: palevioletred; /* Color of the rule */
+      }
+      @media (max-width: 768px) {
+        .company-logo {
+          height: 75%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header" style="background-color:white;width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0);  padding-bottom:10px;">
+        <img src="Logo_last.png" width="5%" style="float:left; margin-top:1.5%;" class="img-responsive">
+        <span> <img src="header.png" width="30%" height="80%" class="img-responsive"></span>
+      </div>
+
+      <div class="content-container">
+       
+          <div class="lesson-title">Decimals</div>
+          <div class="lesson-content">
+            <div>
+              <p>
+                A <b>decimal</b> is a number that includes both a <b>whole part</b> and a <b>fractional part</b>. Decimals help represent values that are not whole numbers but fall between them.  
+                <br><br><b style="color: blueviolet;">Breaking Down a Decimal</b>
+<br><br>A decimal number consists of different parts:
+
+              </p>
+              <ul>
+                <li><b>Whole number part:</b> The number before the decimal point.</li>
+                <li><b>Fractional part:</b> The number after the decimal point, representing a part of a whole.</li>
+                <li><b>Decimal point (.):</b> The separator between the whole and fractional parts.</li>
+              </ul>
+              <img width="30%" src="./images/1.png" alt="">
+              <p>
+                You may notice decimal numbers in everyday life, such as: Grocery stores: Prices like $2.99 or $1.50. Weighing scales: A bag of apples weighing 2.3 kg.
+              </p>
+              <h2 style="color: red;"><u>How to Read a Decimal?</u></h2>
+              <p>
+                There are two ways to read a decimal:
+                <br><br><b style="color: blueviolet;">Informal Way</b> – Read the whole number, say "point," then read each decimal digit separately.
+<br><b style="color: #4CAF50;">Example:</b> 17.48 
+<br><img width="45%" src="./images/2.png" alt="">
+<br><br><b style="color: blueviolet;">Formal Way</b> – Read the whole number, say "and," then read the fractional part using its place value.
+<br><b style="color: #4CAF50;">Example:</b> 25.678
+<br><img width="60%" src="./images/3.png" alt="">
+              </p>
+
+              <h2 style="color: blueviolet;">Understanding Decimal Place Value</h2>
+              <p>
+                A <b>decimal place value chart</b> helps us understand the value of each digit in a decimal number.
+                <br><br>Each place in a number has a value. In whole numbers, we have <b>ones</b>, <b>tens</b>, <b>hundreds</b>, and so on.
+<br><br>In decimal numbers, the values become smaller after the <b>decimal point</b>.
+<br><img width="35%" src="./images/4.png" alt="">
+              </p>
+              <ul>
+                <li><b>Ones (1)</b> → The first place from the right in the whole number part.</li>
+                <li><b>Tens (10)</b> → The second place from the right in the whole number part.</li>
+                <li><b>Hundreds (100)</b> → The third place from the right in the whole number part.</li>
+                <li><b>Thousands (1000)</b> → The fourth place from the right in the whole number part .</li>
+                <li><b>Tenths (0.1)</b> → The first place after the decimal point (1/10 of a whole).</li>
+                <li><b>Hundredths (0.01)</b> → The second place after the decimal point (1/100 of a whole).</li>
+                <li><b>Thousandths (0.001)</b> → The third place after the decimal point (1/1000 of a whole).</li>
+              </ul>
+              <p>
+                For example, in 1234.567:
+                <br><img width="60%" src="./images/5.png" alt="">
+                <br>🔹 <b>1 is in the Thousands place</b> → It means <b>1,000</b>
+                <br>🔹 <b>2 is in the Hundreds place</b> → It means <b>200</b>
+<br>🔹 <b>3 is in the Tens place</b> → It means <b>30</b>
+<br>🔹 <b>4 is in the Ones place</b> → It means <b>4</b>
+<br><br>🔹 <b>The decimal point (.) separates whole numbers from fractional parts.</b>
+<br><br>🔹 <b>5 is in the Tenths place</b> → It means <b>5 tenths or 0.5</b>
+<br>🔹 <b>6 is in the Hundredths place</b> → It means <b>6 hundredths or 0.06</b>
+<br>🔹 <b>7 is in the Thousandths place</b> → It means <b>7 thousandths or 0.007</b>
+<br><img width="50%" src="./images/6.png" alt="">
+              </p>
+
+              <p>
+                To compare decimals, we look at the value of each digit, starting from the left. Some people think a longer decimal is always bigger, but that's not true! 
+                <br><br>We have to compare them based on place value.
+<br><br>Write the decimals in the chart, lining up the digits correctly. First, compare the digits in the highest place value.
+<br><br>If they are the same, move to the next place value and continue until you find a difference.
+ <br><br><b>Let’s compare 4.51 and 4.55:</b>
+ <br><img width="40%" src="./images/7.png" alt="">
+ <br><img width="40%" src="./images/8.png" alt="">
+              </p>
+              <ul>
+                <li>Both numbers have <b>4</b> in the ones place, so they are equal so far.</li>
+                <li>Both have <b>5</b> in the tenths place, so we keep going.</li>
+                <li>In the hundredths place, <b>1</b> is smaller than <b>5</b>.</li>
+              </ul>
+              <p>
+                Since 1 is smaller than 5, <b>4.51 is less than 4.55</b>
+                <br>We can say that 4.51 < 4.75
+                <br><img width="60%" src="./images/9.png" alt="">
+
+              </p>
+              <h2 style="color: blueviolet;">Rules for Comparing Decimals</h2>
+              <p>
+                We can compare decimals step by step to find which one is greater. Let’s break it down into simple steps:
+                <br><br><b>Step 1: Use a Place Value Chart</b>
+<br>Write the decimal numbers in a place value chart so that all the digits are lined up correctly. If one decimal has fewer digits, you can add zeros at the end to help with comparison.
+<br><br><b>Step 2: Compare the Whole Number Part</b>
+<br>Start by looking at the whole number part of each decimal. The number with the greater whole number is the larger decimal.
+<br><br><b style="color: #4CAF50;">Example:</b>
+<br><img width="50%" src="./images/15.png" alt="">
+<br>Comparing <b>5.2</b> and <b>3.9</b>, we see that <b>5 is greater than 3</b>.
+<br><img width="50%" src="./images/10.png" alt="">
+<br>So <b>5.2 is greater than 3.9</b>
+<br><br><b>Step 3: Compare the Decimal Places</b>
+<br>If the whole number parts are the same, move to the tenths place. Compare the digits. If they are also the same, move to the hundredths place, and so on, until you find a difference.
+<br><br><b style="color: #4CAF50;">Example:</b>
+<br>Comparing <b>4.13</b> and <b> 4.257</b> :
+<br><img width="60%" src="./images/11.png" alt="">
+<br>Both have the same whole number part that is 4.
+<br>Comparing the digits at the tenth place, we get 1 < 2.
+<br><img width="60%" src="./images/12.png" alt="">
+<br>At this step we can say that the decimal 4.13 < 4.257
+
+              </p>
+
+              <h2 style="color: blueviolet;">Comparing Decimals to the Hundredths Place</h2>
+              <p>
+                If the tenths place is the same, check the hundredths place.
+                <br><br><b style="color: #4CAF50;"> Example:</b> Comparing <b>4.135</b> and <b>4.157</b>:
+               <br>Let’s arrange them in the place value chart.
+               <br><img width="60%" src="./images/13.png" alt="">
+              </p>
+              <ul>
+                <li>Both have <b>4</b> in the ones place (same).</li>
+                <li>Both have <b>1</b> in the tenths place (same).</li>
+                <li>Thus, we compare the digits at the hundredths place.
+                  <br>3 < 5
+                  <br><br>Therefore, <b>4.135< 4.157</b>
+
+                </li>
+              </ul>
+              <h2 style="color: blueviolet;">Ordering Decimals</h2>
+              <p>
+                To compare and order decimals, follow these steps:
+              </p>
+              <ol>
+                <li>
+                  <b>Use a Place Value Chart</b> – Write the decimals in a place value chart to compare their digits correctly. If needed, add zeros at the end to make the comparison easier.
+                </li>
+                <li>
+                  <b>Compare the Digits</b> – Start with the whole number part. If they are the same, compare the tenths, then the hundredths, and so on until you find a difference.
+                </li>
+                <li>
+                  <b>Arrange in Order</b> – Once you have compared the decimals, write them in the required order:
+                  <ul>
+                    <li>
+                      <b>Ascending Order</b> (smallest to largest)
+                    </li>
+                    <li><b>Descending Order</b> (largest to smallest)</li>
+                  </ul>
+                </li>
+              </ol>
+              <p>
+                <b style="color: #4CAF50;">Example:</b> Compare and write in descending order: 0.52, 1.21, 1.27, 2.25, 2.29
+                <br><img width="60%" src="./images/14.png" alt="">
+                <br>2.29 > 2.25 as ones and tenths are the same but at hundredth place 9 is bigger than 5.
+                <br><br>1.27 > 1.21 as ones and tenths are the same but at hundredth place 7 is bigger than 1.
+                <br><br>Also, comparing the whole number parts, we get:
+                <br>2 > 1 > 0
+                <br><br>So, in descending order we can put the numbers as:
+                <br><b>2.29 > 2.25 > 1.27 > 1.21 > 0.52</b>
+
+              </p>
+
+            </div>
+            
+          </div>
+            
+          
+          
+        
+        
+        
+      </div>
+      
+   
+    <footer>
+      <span>Created By Team Way To Succeed</span>
+    </footer>
+  </body>
+</html>
